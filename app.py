@@ -59,7 +59,7 @@ def makeYqlQuery(req):
     result = req.get("result")
     parameters = result.get("parameters")
     city = parameters.get("geocity")
-    print(geocity);
+    print(city);
     print("NONE");
     if city is None:
         return None
