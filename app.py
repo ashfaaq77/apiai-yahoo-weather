@@ -39,7 +39,7 @@ def webhook():
 def processRequest(req):
     print("asnfn")
    # lol = req.get("result").get("interaction").get("action")
-    print(lol)
+   # print(lol)
   #  if req.get("result").get("interaction").get("action") != "yahooWeatherForecast":
   #      return {}
     print("test passed")
