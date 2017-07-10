@@ -27,9 +27,8 @@ def webhook():
     print(json.dumps(req, indent=4))
 
     res = processRequest(req)
-
-    res = json.dumps(res, indent=4)
     print("res")
+    res = json.dumps(res, indent=4)
     print(res)
     r = make_response(res)
     r.headers['Content-Type'] = 'application/json'
@@ -37,7 +36,9 @@ def webhook():
 
 
 def processRequest(req):
-    if req.get("result").get("action") != "yahooWeatherForecast":
+    if req.get("result").get("interaction").get("action") != "yahooWeatherForecast":
+        print("action")
+        print(req.get("result").get("interaction").get("action"))
         return {}
     
     print("test passed")
