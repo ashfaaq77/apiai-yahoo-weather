@@ -42,12 +42,12 @@ def processRequest(req):
     
     print("test passed")
     return [
-             {
-                "type": "text"
-                 "messages": [
-                     "OK, no problem"
-                  ]
-             }
+            {
+                "type":"text",
+                "messages": [
+                    "Ok, No problem";
+                ]
+            }
     ]
 
 
