@@ -41,7 +41,7 @@ def processRequest(req):
    #lol = req.get("result").get("interaction").get("action")
    # print(lol)
    if req.get("result").get("interaction").get("action") != "yahooWeatherForecast":
-        return {}
+    return {}
     print("test passed")
     baseurl = "https://query.yahooapis.com/v1/public/yql?"
     yql_query = makeYqlQuery(req)
