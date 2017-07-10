@@ -42,14 +42,12 @@ def processRequest(req):
     
     print("test passed")
     return "responses": [
-        [
-            {
-                "type":"text",
-                "messages": [
-                    "OK, No problem"
-                ]
-            }
-        ]
+        {
+            "type":"text",
+            "messages": [
+                "Ok, NP"
+            ]
+        }
     ]
 
 if __name__ == '__main__':
