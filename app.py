@@ -41,14 +41,16 @@ def processRequest(req):
         return {}
     
     print("test passed")
-    return "responses": [
-        {
-            "type":"text",
-            "messages": [
-                "Ok, NP"
-            ]
-        }
-    ]
+    return {
+        "responses": [
+            {
+                "type": "text",
+                "messages": [
+                    "Ok, NP"
+                ]
+            }
+        ]
+    }
 
 if __name__ == '__main__':
     port = int(os.getenv('PORT', 5000))
