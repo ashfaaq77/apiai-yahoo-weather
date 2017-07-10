@@ -42,26 +42,15 @@ def processRequest(req):
     
     print("test passed")
     return "responses": [
+        [
             {
                 "type":"text",
                 "messages": [
-                    "Ok, No problem"
+                    "OK, No problem"
                 ]
             }
+        ]
     ]
-
-
-def makeYqlQuery(req):
-    result = req.get("result")
-    parameters = result.get("parameters")
-    city = parameters.get("geocity")
-    sessionID = req.get("sessionId")
-    print(city)
-    print("NONE")
-    print(sessionID)
-    print("lol1")
-    return
-
 
 if __name__ == '__main__':
     port = int(os.getenv('PORT', 5000))
