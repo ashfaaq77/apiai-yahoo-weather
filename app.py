@@ -45,7 +45,7 @@ def processRequest(req):
             {
                 "type":"text",
                 "messages": [
-                    "Ok, No problem";
+                    "Ok, No problem"
                 ]
             }
     ]
