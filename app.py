@@ -41,7 +41,7 @@ def processRequest(req):
         return {}
     
     print("test passed")
-    return [
+    return "responses": [
             {
                 "type":"text",
                 "messages": [
